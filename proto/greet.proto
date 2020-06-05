@@ -1,7 +1,7 @@
 syntax = "proto3";
 
 option go_package = "/handler";
-// import "google/api/annotations.proto";
+import "google/api/annotations.proto";
 
 message PingMessage {
   string greeting = 1;

@@ -15,9 +15,6 @@ import (
 	"google.golang.org/grpc"
 )
 
-const ip = ""
-const port = "8088"
-
 var (
 	grpcServerAddr string
 	restServerAddr string
