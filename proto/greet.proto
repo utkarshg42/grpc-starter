@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+option go_package = "/handler";
+// import "google/api/annotations.proto";
+
+message PingMessage {
+  string greeting = 1;
+}
+
+service Ping {
+  rpc SayHello(PingMessage) returns (PingMessage) {
+    option (google.api.http)  = {
+      post : "/api/v1/ping"
+      body : "*"
+    };
+  }
+}
